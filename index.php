@@ -1,3 +1,4 @@
+<?php require("nav/index.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,21 +14,6 @@
        <span class="sk-inner-circle"></span>
      </div>
 </div>
-	<!-- navigation isn't published yet
-	<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><i class="fa fa-user"></i></a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="pages/school/courses.html">Courses</a></li>
-      <li><a href="pages/cubing/cubing.html">Cubing</a></li>
-    </ul>
-    <button class="btn btn-danger navbar-btn"><a href="files/resume.pdf" download> Resume Download</a></button>
-  </div>
-</nav> -->
-	
 </head>
 <body>
 	<section class="container">
@@ -49,7 +35,7 @@
 			<div class="about home-border">
 				<h2>Hi! I'm Saransh</h2>
 				<p>I am currently a Sophmore at Stony Brook University majoring in Computer Science and planning to minor in Enterprenurship and Digital Arts. </p>
-				<p> I am proficient in Java and am working towards mastering web and app development. A list all courses that I have taken or plan to take is available <a style="color: black" href="pages/school/courses.html">here. </a></p>
+				<p> I am proficient in Java and am working towards mastering web and app development. A list all courses that I have taken or plan to take is available <a style="color: black" href="pages/school/courses.php">here. </a></p>
 				<p> When I am not coding, I am solving Rubik's cubes, watching and reviewing movies and playing video games. This website will serve my one stop hub on the internet.</p>
 				<p> Feel free to contact me or download my resume from the links below!</p>
 			</div>
