@@ -4,20 +4,15 @@
 		<meta charset="utf-8">
 	<title>Saransh Grover</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- stylesheet css -->
-	<link rel="stylesheet" href="../../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../css/font-awesome.min.css">
-	<link rel="stylesheet" href="../../css/style.css">
-	<div class="preloader">
-	<div class="sk-spinner sk-spinner-wordpress">
-       <span class="sk-inner-circle"></span>
-     </div>
-</div>
-	<div class="preloader">
-	<div class="sk-spinner sk-spinner-wordpress">
-       <span class="sk-inner-circle"></span>
-     </div>
-</div>
+		<!-- stylesheet css -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>	
+<script src="/js/jquery.backstretch.min.js"></script>
+	
+
 	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">

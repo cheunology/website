@@ -9,70 +9,138 @@
 	<link rel="stylesheet" href="../../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../css/font-awesome.min.css">
 	<link rel="stylesheet" href="../../css/style.css">
-	<div class="preloader">
-	<div class="sk-spinner sk-spinner-wordpress">
-       <span class="sk-inner-circle"></span>
-     </div>
-</div>
+	<script src="../../js/jquery.js"></script>
+<script src="../../js/bootstrap.min.js"></script>	
+<script src="../../js/jquery.backstretch.min.js"></script>
 	
 </head>
 	<body>
-		<div class="panel panel-header"> <h1 style="text-align: left">Courses Taken</h1></div>
-		<ul class="filters">
-  <li data-filter-by="all">All</li>
-  <li data-filter-by="one">One</li>
-  <li data-filter-by="two">Two</li>
-  <li data-filter-by="three">Three</li>
-</ul>
+<p>Filter by Course Tags!</p>
 
-<div class="item" data-filter="one">1</div>
-<div class="item" data-filter="two">2</div>
-<div class="item" data-filter="three">3</div>
-<style>
-		@import "compass/css3";
+<button  class="btn btn-primary" $( document ).ready(onclick="All())">All</button>
+<button class="btn btn-primary" $( document ).ready(onclick="CS())">CS</button>
+<button class="btn btn-primary" $( document ).ready(onclick="Business())">Business</button>
+<button class="btn btn-primary" $( document ).ready(onclick="Math())">Math</button>
+<button class="btn btn-primary" $( document ).ready(onclick="DigitalArts())">Digital Arts</button>
 
-.filters {
-  margin: 10px;
-  
-  & li {
-    padding: 10px;
-    cursor: pointer;
-  }
-}
+<br><br>
+<div id="CS" style="display:block">
+<div class ="panel panel-default">
+<div class="panel heading"> CSE 114: Introduction to Java</div>
+<div class="panel panel-body">A class introducing basic object oriented programming using Java as the main learning language. </div>
+</div>
+<div class="panel panel-body"> CSE 214: Java Fundamentals </div>
+<div class="panel panel-body"> CSE 215: Discrete Mathematics </div>
+<div class="panel panel-body"> CSE 219: System Fundamentals </div>
+</div>
+<div id="Business" style="display:block">
+<div class="panel panel-body"> BUS 115: Introduction to Business </div>
+</div>
+<div id="Math" style="display:block">
+<div class="panel panel-body"> MAT 132: Calculus II </div>
+<div class="panel panel-body"> AMS 210: Linear Algebra </div>
+<div class="panel panel-body"> AMS 310: Probability </div>
+</div>
+<div id="DigitalArts" style="display:block">
+<div class="panel panel-body"> ARH 207: Digital Media: History/Theory </div>
+<div class="panel panel-body"> EGL 194: Global Film Traditions </div>
+</div>
 
-.item {
-  width: 200px;
-  height: 200px;
-  background: red;
-  float: left;
-  margin: 10px;
-  text-align: center;
-  line-height: 200px;
-  color: #fff;
-  font-size: 38px;
-}
-		</style>
-	
+
 <script>
-		$('.filters li').on('click',function() {
-  var $fVal = $(this).attr('data-filter-by');
-  $('.item').each(function(){
-    var $iVal = $(this).attr('data-filter');
-    if ($fVal == 'all') {
-      $(this).fadeIn(200);
-    } else if ($fVal !== $iVal) {
-      $(this).fadeOut(200);
-    } else {
-      $(this).fadeIn(200);
+function CS() {
+    var one = document.getElementById("CS");
+    if (one.style.display === "none") {
+        one.style.display = "block";
+    } 
+    var two = document.getElementById("Business");
+    if (two.style.display === "block") {
+        two.style.display = "none";
     }
-  });
-});
-		</script>
+    var three = document.getElementById("Math");
+    if (three.style.display === "block") {
+        three.style.display = "none";
+    }
+    var four = document.getElementById("DigitalArts");
+    if (four.style.display === "block") {
+        four.style.display = "none";
+    } 
+}
+function DigitalArts() {
+    var one = document.getElementById("DigitalArts");
+    if (one.style.display === "none") {
+        one.style.display = "block";
+    } 
+    var two = document.getElementById("Business");
+    if (two.style.display === "block") {
+        two.style.display = "none";
+    }
+    var three = document.getElementById("Math");
+    if (three.style.display === "block") {
+        three.style.display = "none";
+    }
+    var four = document.getElementById("CS");
+    if (four.style.display === "block") {
+        four.style.display = "none";
+    } 
+}
+function Business() {
+    var one = document.getElementById("Business");
+    if (one.style.display === "none") {
+        one.style.display = "block";
+    } 
+    var two = document.getElementById("CS");
+    if (two.style.display === "block") {
+        two.style.display = "none";
+    }
+    var three = document.getElementById("Math");
+    if (three.style.display === "block") {
+        three.style.display = "none";
+    }
+    var four = document.getElementById("DigitalArts");
+    if (four.style.display === "block") {
+        four.style.display = "none";
+    }
+}
+function Math() {
+    var one = document.getElementById("Math");
+    if (one.style.display === "none") {
+        one.style.display = "block";
+    } 
+    var two = document.getElementById("CS");
+    if (two.style.display === "block") {
+        two.style.display = "none";
+    }
+    var three = document.getElementById("Business");
+    if (three.style.display === "block") {
+        three.style.display = "none";
+    }
+    var four = document.getElementById("DigitalArts");
+    if (four.style.display === "block") {
+        four.style.display = "none";
+    }
+}
+function All() {
+var one = document.getElementById("CS");
+    if (one.style.display === "none") {
+        one.style.display = "block";
+    } 
+var two = document.getElementById("Business");
+    if (two.style.display === "none") {
+        two.style.display = "block";
+    } 
+var three = document.getElementById("Math");
+    if (three.style.display === "none") {
+        three.style.display = "block";
+    }
+var four = document.getElementById("DigitalArts");
+    if (four.style.display === "none") {
+        four.style.display = "block";
+    }    
+}
+</script>
 <!-- javascript js -->	
-<script src="../../js/jquery.js"></script>
-<script src="../../js/bootstrap.min.js"></script>	
-<script src="../../js/jquery.backstretch.min.js"></script>
-<script src="../../js/custom.js"></script>
+
 
 </body>
 	  	<footer>
