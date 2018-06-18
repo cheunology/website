@@ -14,133 +14,155 @@
 <script src="../../js/jquery.backstretch.min.js"></script>
 	
 </head>
-	<body>
-<p>Filter by Course Tags!</p>
+	
+<h2>Filter by Course Tags!</h2>
 
-<button  class="btn btn-primary" $( document ).ready(onclick="All())">All</button>
-<button class="btn btn-primary" $( document ).ready(onclick="CS())">CS</button>
-<button class="btn btn-primary" $( document ).ready(onclick="Business())">Business</button>
-<button class="btn btn-primary" $( document ).ready(onclick="Math())">Math</button>
-<button class="btn btn-primary" $( document ).ready(onclick="DigitalArts())">Digital Arts</button>
+<button  class="btn btn-primary" onclick="All()">All</button>
+<button class="btn btn-primary" onclick="CS()">CS</button>
+<button class="btn btn-primary" onclick="Business()">Business</button>
+<button class="btn btn-primary" onclick="Math()">Math</button>
+<button class="btn btn-primary" onclick="DigitalArts()">Digital Arts</button>
 
 <br><br>
-<div id="CS" style="display:block">
-<div class ="panel panel-default">
-<div class="panel heading"> CSE 114: Introduction to Java</div>
-<div class="panel panel-body">A class introducing basic object oriented programming using Java as the main learning language. </div>
-</div>
-<div class="panel panel-body"> CSE 214: Java Fundamentals </div>
-<div class="panel panel-body"> CSE 215: Discrete Mathematics </div>
-<div class="panel panel-body"> CSE 219: System Fundamentals </div>
-</div>
-<div id="Business" style="display:block">
-<div class="panel panel-body"> BUS 115: Introduction to Business </div>
-</div>
-<div id="Math" style="display:block">
-<div class="panel panel-body"> MAT 132: Calculus II </div>
-<div class="panel panel-body"> AMS 210: Linear Algebra </div>
-<div class="panel panel-body"> AMS 310: Probability </div>
-</div>
-<div id="DigitalArts" style="display:block">
-<div class="panel panel-body"> ARH 207: Digital Media: History/Theory </div>
-<div class="panel panel-body"> EGL 194: Global Film Traditions </div>
+<style>
+	.courses {
+		background-color: coral;
+	}
+</style>
+<div class="container courses">
+	<div id="CS" style="display:block">
+		<div class ="panel panel-default">
+			<div class="panel heading"> CSE 114: Introduction to Java</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel panel-body"> CSE 214: Java Fundamentals </div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel panel-body"> CSE 215: Discrete Mathematics </div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel panel-body"> CSE 219: System Fundamentals </div>
+		</div>
+	</div>
+	<div id="Business" style="display:block">
+		<div class ="panel panel-info">
+			<div class="panel panel-body"> BUS 115: Introduction to Business </div>
+		</div>
+	</div>
+	<div id="Math" style="display:block">
+		<div class ="panel panel-success">
+			<div class="panel panel-body"> MAT 132: Calculus II </div>
+		</div>
+		<div class ="panel panel-success">
+			<div class="panel panel-body"> AMS 210: Linear Algebra </div>
+		</div>
+		<div class ="panel panel-success">
+			<div class="panel panel-body"> AMS 310: Probability </div>
+		</div>
+	</div>
+	<div id="DigitalArts" style="display:block">
+		<div class ="panel panel-warning">
+			<div class="panel panel-body"> ARH 207: Digital Media: History/Theory </div>
+		</div>
+		<div class ="panel panel-warning">
+			<div class="panel panel-body"> EGL 194: Global Film Traditions </div>
+		</div>
+	</div>
 </div>
 
 
 <script>
 function CS() {
     var one = document.getElementById("CS");
-    if (one.style.display === "none") {
+    if (one.style.display == "none") {
         one.style.display = "block";
     } 
     var two = document.getElementById("Business");
-    if (two.style.display === "block") {
+    if (two.style.display == "block") {
         two.style.display = "none";
     }
     var three = document.getElementById("Math");
-    if (three.style.display === "block") {
+    if (three.style.display == "block") {
         three.style.display = "none";
     }
     var four = document.getElementById("DigitalArts");
-    if (four.style.display === "block") {
+    if (four.style.display == "block") {
         four.style.display = "none";
     } 
 }
 function DigitalArts() {
     var one = document.getElementById("DigitalArts");
-    if (one.style.display === "none") {
+    if (one.style.display == "none") {
         one.style.display = "block";
     } 
     var two = document.getElementById("Business");
-    if (two.style.display === "block") {
+    if (two.style.display == "block") {
         two.style.display = "none";
     }
     var three = document.getElementById("Math");
-    if (three.style.display === "block") {
+    if (three.style.display == "block") {
         three.style.display = "none";
     }
     var four = document.getElementById("CS");
-    if (four.style.display === "block") {
+    if (four.style.display == "block") {
         four.style.display = "none";
     } 
 }
 function Business() {
     var one = document.getElementById("Business");
-    if (one.style.display === "none") {
+    if (one.style.display == "none") {
         one.style.display = "block";
     } 
     var two = document.getElementById("CS");
-    if (two.style.display === "block") {
+    if (two.style.display == "block") {
         two.style.display = "none";
     }
     var three = document.getElementById("Math");
-    if (three.style.display === "block") {
+    if (three.style.display == "block") {
         three.style.display = "none";
     }
     var four = document.getElementById("DigitalArts");
-    if (four.style.display === "block") {
+    if (four.style.display == "block") {
         four.style.display = "none";
     }
 }
 function Math() {
     var one = document.getElementById("Math");
-    if (one.style.display === "none") {
+    if (one.style.display == "none") {
         one.style.display = "block";
     } 
     var two = document.getElementById("CS");
-    if (two.style.display === "block") {
-        two.style.display = "none";
+    if (two.style.display == "block") {
+        two.style.display == "none";
     }
     var three = document.getElementById("Business");
-    if (three.style.display === "block") {
+    if (three.style.display == "block") {
         three.style.display = "none";
     }
     var four = document.getElementById("DigitalArts");
-    if (four.style.display === "block") {
+    if (four.style.display == "block") {
         four.style.display = "none";
     }
 }
 function All() {
 var one = document.getElementById("CS");
-    if (one.style.display === "none") {
+    if (one.style.display == "none") {
         one.style.display = "block";
     } 
 var two = document.getElementById("Business");
-    if (two.style.display === "none") {
+    if (two.style.display == "none") {
         two.style.display = "block";
     } 
 var three = document.getElementById("Math");
-    if (three.style.display === "none") {
+    if (three.style.display == "none") {
         three.style.display = "block";
     }
 var four = document.getElementById("DigitalArts");
-    if (four.style.display === "none") {
+    if (four.style.display == "none") {
         four.style.display = "block";
     }    
 }
 </script>
-<!-- javascript js -->	
-
 
 </body>
 	  	<footer>
